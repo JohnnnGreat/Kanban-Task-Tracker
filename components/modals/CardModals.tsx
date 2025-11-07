@@ -77,11 +77,11 @@ export function CardModal({ isOpen, onClose, onSave, card, columnId }: CardModal
    return (
       <div className="relative inset-0 z-50 flex items-center justify-center p-4">
          {/* Backdrop */}
-         <div
+         {/* <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={onClose}
             aria-hidden="true"
-         />
+         /> */}
 
          {/* Modal */}
          <div
