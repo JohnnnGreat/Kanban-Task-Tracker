@@ -204,7 +204,7 @@ export function Board() {
       : null;
 
    return (
-      <div className="min-h-screen overflow-hidden">
+      <div className=" overflow-hidden">
          {/* Live Region for Screen Reader Announcements */}
          <LiveRegion message={announcement} />
 
