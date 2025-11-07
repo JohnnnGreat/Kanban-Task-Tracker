@@ -1,5 +1,3 @@
-// src/lib/types.ts
-
 export type Priority = "low" | "medium" | "high";
 
 export interface Avatar {
