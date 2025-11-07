@@ -93,27 +93,27 @@ docker pull johnossaidev/kanban-app:latest docker run -p 3000:3000 johnossaidev/
 
 ```
 4. Access: [http://localhost:3000](http://localhost:3000).
--  Single container, no external deps. Stops with Ctrl+C; persists via localStorage.
+- Single container, no external deps. Stops with Ctrl+C; persists via localStorage.
 
 ## Usage
 
--  **Add Card**: Click "+" in column header → Modal with form (title, desc, assignee, priority,
+- **Add Card**: Click "+" in column header → Modal with form (title, desc, assignee, priority,
 etc.).
--  **Edit/Delete**: Click card (Enter for keyboard) → Modal; trash icon for delete (confirm).
--  **Drag**: Mouse-drag cards between columns; keyboard: Tab to card → Space (grab) → Arrows (move)
+- **Edit/Delete**: Click card (Enter for keyboard) → Modal; trash icon for delete (confirm).
+- **Drag**: Mouse-drag cards between columns; keyboard: Tab to card → Space (grab) → Arrows (move)
 → Space (drop).
--  **Filter/Search**: Use top inputs to filter by status/assignee or search titles.
--  **Announcements**: Screen reader (NVDA/VoiceOver) reads moves/edits via live region.
+- **Filter/Search**: Use top inputs to filter by status/assignee or search titles.
+- **Announcements**: Screen reader (NVDA/VoiceOver) reads moves/edits via live region.
 
 Sample data loads on startup: 3 columns with 9 HR-themed tasks (e.g., "Update vendor contract SLA").
 
 ## Accessibility Notes
 
--  **Keyboard Full**: Tab-focusable items, arrow reordering, grab/drop with Space/Enter/Esc.
--  **ARIA**: `role="region"` for zones, `aria-grabbed` for items, `aria-live="polite"` for
+- **Keyboard Full**: Tab-focusable items, arrow reordering, grab/drop with Space/Enter/Esc.
+- **ARIA**: `role="region"` for zones, `aria-grabbed` for items, `aria-live="polite"` for
 announcements.
--  **Contrast/Focus**: Tailwind defaults meet WCAG AA; visible rings on focus.
--  Tested with: Lighthouse (A11y score 95+), NVDA (announcements fire on drag).
+- **Contrast/Focus**: Tailwind defaults meet WCAG AA; visible rings on focus.
+- Tested with: Lighthouse (A11y score 95+), NVDA (announcements fire on drag).
 
 ## Evaluation Context
 
