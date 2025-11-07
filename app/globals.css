@@ -1,26 +1,62 @@
+/* Secondary Font Us==> Accessible From Google */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @import "tailwindcss";
 
+/* Primary Font Romie==> Premium font, used for heading and text with high contrast */
+
+@font-face {
+   font-family: "Romie";
+   src: url("/fonts/romie/Romie-Regular.otf") format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Romie";
+   src: url("/fonts/romie/Romie-Medium.otf") format("opentype");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Romie";
+   src: url("/fonts/romie/Romie-Bold.otf") format("opentype");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Color Configs */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+   --background: #ffffff;
+   --foreground: #171717;
+   --accent: #f4f7fb;
+   --primary: #990011;
+   --gray-500: #cbd5e1;
+   --text-black: #1f1f1f;
+   --font-romie: "Romie", sans-serif;
+   --font-albert-sans: "Albert Sans", sans-serif;
+
+   /* Alt Colors */
+   --blue-500: #0270ff;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+   --font-sans: var(--font-geist-sans);
+   --font-mono: var(--font-geist-mono);
+   --font-romie: var(--font-romie);
+   --font-albert-sans: var(--font-albert-sans);
+   --color-primary: var(--primary);
+   --color-accent: var(--accent);
+   --color-text-black: var(--text-black);
+   --color-blue-500: var(--blue-500);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   @apply font-albert-sans;
 }

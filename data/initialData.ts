@@ -1,3 +1,4 @@
+import { Board } from "@/lib/types";
 
 export const initialBoard: Board = {
    id: "board-1",
