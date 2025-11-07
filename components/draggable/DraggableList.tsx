@@ -3,7 +3,6 @@
 import React, { useState, useCallback, useReducer } from "react";
 import { DraggableItem } from "./DraggableItem";
 import { DroppableZone } from "./DroppableZone";
-import { DragOverlay } from "./DragOverlay";
 import { cn } from "@/lib/utils";
 
 interface DraggableItemData {
@@ -366,10 +365,6 @@ export function DraggableList<T extends DraggableItemData>({
 
             {renderedItems}
          </DroppableZone>
-
-         {draggedItemNode && (
-            <DragOverlay isVisible={!!dragState.draggedItemId}>{draggedItemNode}</DragOverlay>
-         )}
       </>
    );
 }
